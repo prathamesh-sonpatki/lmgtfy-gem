@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+# -*- mode: ruby -*-
+
+require 'lmgtfy/runner'
+
+STDOUT.puts Lmgtfy::Runner.new.generate_lmgtfy_url
