@@ -4,13 +4,16 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'lmgtfy/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "lmgtfy"
-  gem.version       = Lmgtfy::VERSION
-  gem.authors       = ["Prathamesh Sonpatki"]
-  gem.email         = ["csonpatki@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.name                 = "lmgtfy"
+  gem.version              = Lmgtfy::VERSION
+  gem.authors              = ["Prathamesh Sonpatki"]
+  gem.email                = ["csonpatki@gmail.com"]
+  gem.description          = %q{Command line wrapper for http://lmgtfy.com}
+  gem.summary              = %q{Give a query string and get a url back from http://lmgtfy.com}
+  gem.homepage             = "https://github.com/prathamesh-sonpatki/lmgtfy-gem"
+  gem.post_install_message = "Thanks for installing! Now troll the trolls :)"
+  gem.license              = 'MIT'
+  gem.add_development_dependency 'rspec'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
