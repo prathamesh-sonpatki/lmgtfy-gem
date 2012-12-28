@@ -8,4 +8,9 @@ describe Lmgtfy::Runner do
     runner.query.should eq ARGV[0]
   end
 
+  it "generates correct url" do
+    runner = Lmgtfy::Runner.new
+    runner.generate_lmgtfy_url.should eq "http://lmgtfy.com/?q=#{ARGV[0]}"
+  end
+
 end
