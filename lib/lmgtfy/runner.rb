@@ -1,3 +1,5 @@
+require 'uri'
+
 module Lmgtfy
 
   class Runner
@@ -5,11 +7,11 @@ module Lmgtfy
     attr_reader :query
 
     def initialize
-      @query = ARGV[0]
+      @query = URI.encode_www_form([ ["q", ARGV.join(" ")] ])
     end
 
     def generate_lmgtfy_url
-      "http://lmgtfy.com/?q=#{@query}"
+      "http://lmgtfy.com/?#{@query}"
     end
 
   end
