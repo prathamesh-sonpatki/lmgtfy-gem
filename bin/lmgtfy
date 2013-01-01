@@ -3,4 +3,8 @@
 
 require 'lmgtfy/runner'
 
-STDOUT.puts Lmgtfy::Runner.new.generate_lmgtfy_url
+lmgt = Lmgtfy::Runner.new.generate_lmgtfy_url
+shrt = Lmgtfy::Runner.new.generate_short_url
+
+puts "lmgtfy_url => #{lmgt}"
+puts "short_url  => #{shrt}"
