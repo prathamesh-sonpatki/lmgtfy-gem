@@ -3,6 +3,10 @@ lmgtfy-gem
 
 Ruby gem for http://lmgtfy.com/ - command line tool for http://lmgtfy.com/
 
+## Features
+
+Get original as well as shortened lmgtfy url for your query from command line
+
 ## Status
 
 [![Build Status](https://travis-ci.org/prathamesh-sonpatki/lmgtfy-gem.png?branch=master)](https://travis-ci.org/prathamesh-sonpatki/lmgtfy-gem)
