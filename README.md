@@ -3,6 +3,8 @@ lmgtfy-gem
 
 Ruby gem for http://lmgtfy.com/ - command line tool for http://lmgtfy.com/
 
+[![Gem Version](https://badge.fury.io/rb/lmgtfy.png)](http://badge.fury.io/rb/lmgtfy)
+
 ## Features
 
 Get original as well as shortened lmgtfy url for your query from command line
