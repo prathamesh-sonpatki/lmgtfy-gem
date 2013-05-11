@@ -17,8 +17,12 @@ module Lmgtfy
     def generate_short_url
       base_url = "http://is.gd/create.php?format=json&url="
       string = "http://lmgtfy.com/?#{@query}"
-      response = Net::HTTP.get_response(URI.parse(base_url + string))
-      JSON.parse(response.body)["shorturl"]
+      begin
+        response = Net::HTTP.get_response(URI.parse(base_url + string))
+        JSON.parse(response.body)["shorturl"]
+      rescue
+        "No internet connection"
+      end
     end
 
   end
