@@ -13,6 +13,10 @@ Get original as well as shortened lmgtfy url for your query from command line
 
 [![Build Status](https://travis-ci.org/prathamesh-sonpatki/lmgtfy-gem.png?branch=master)](https://travis-ci.org/prathamesh-sonpatki/lmgtfy-gem)
 
+## Coverage
+
+[![Coverage Status](https://coveralls.io/repos/prathamesh-sonpatki/lmgtfy-gem/badge.png?branch=master)](https://coveralls.io/r/prathamesh-sonpatki/lmgtfy-gem?branch=master)
+
 ## Installation
 
 Add this line to your application's Gemfile:
