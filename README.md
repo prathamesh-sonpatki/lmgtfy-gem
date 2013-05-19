@@ -42,7 +42,7 @@ Use the output url anywhere you want
 
 ## Features
 
-Get original as well as shortened lmgtfy url for your query from command line
+Get original as well as shortened lmgtfy URL for your query from command line
 
 
 ## Contributing

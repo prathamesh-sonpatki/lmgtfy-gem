@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lmgtfy (0.0.5)
+    lmgtfy (0.0.6)
 
 GEM
   remote: https://rubygems.org/
