@@ -32,6 +32,9 @@ Or install it yourself as:
 Pass a query string to lmgtfy from command line as follows
 
     $ lmgtfy test
+      lmgtfy_url => http://lmgtfy.com/?q=lmgtfy
+      short_url  => http://is.gd/6e69CQ
+
     $ http://lmgtfy.com/?q=test
 
 Use the output url anywhere you want
