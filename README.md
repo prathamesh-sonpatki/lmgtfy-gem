@@ -5,10 +5,6 @@ Ruby gem for http://lmgtfy.com/ - command line tool for http://lmgtfy.com/
 
 [![Gem Version](https://badge.fury.io/rb/lmgtfy.png)](http://badge.fury.io/rb/lmgtfy)
 
-## Features
-
-Get original as well as shortened lmgtfy url for your query from command line
-
 ## Status
 
 [![Build Status](https://travis-ci.org/prathamesh-sonpatki/lmgtfy-gem.png?branch=master)](https://travis-ci.org/prathamesh-sonpatki/lmgtfy-gem)
@@ -39,6 +35,11 @@ Pass a query string to lmgtfy from command line as follows
     $ http://lmgtfy.com/?q=test
 
 Use the output url anywhere you want
+
+
+## Features
+
+Get original as well as shortened lmgtfy url for your query from command line
 
 
 ## Contributing
