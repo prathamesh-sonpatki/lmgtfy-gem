@@ -4,17 +4,19 @@ require 'lmgtfy/runner'
 describe Lmgtfy::Runner do
 
   before do
-    @query = URI.encode_www_form([['q', ARGV.join(' ')]])
+    @query  = URI.encode_www_form([['q', ARGV.join(' ')]])
+    @runner = Lmgtfy::Runner.new
   end
 
   it "accepts search query from the user" do
-    runner = Lmgtfy::Runner.new
-    runner.query.should eq @query
+    expect(@runner.query).to eq @query
   end
 
-  it "generates correct url" do
-    runner = Lmgtfy::Runner.new
-    runner.generate_lmgtfy_url.should eq "http://lmgtfy.com/?#{@query}"
+  it "generates correct long url" do
+    expect(@runner.generate_lmgtfy_url).to eq "http://lmgtfy.com/?#{@query}"
   end
 
+  it "generates short url" do
+    # except(@runner.generate_short_url).to_eq "http://lmgtfy.com/?#{@query}"
+  end
 end
